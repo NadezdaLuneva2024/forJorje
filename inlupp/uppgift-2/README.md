@@ -9,7 +9,7 @@ Skapa en funktion sum_list(numbers) som returnerar summan av alla siffror i list
 ### Funktionens Signatur
 
 ```python
-def sum_list(numbers: List[int]) -> int:
+def sum_list(numbers: list[int]) -> int:
     """
     Returnerar summan av alla siffror i listan.
     """
