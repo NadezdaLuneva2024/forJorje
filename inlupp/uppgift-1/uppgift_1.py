@@ -6,7 +6,7 @@
 
 def is_odd(x: int) -> bool:
     """
-    Skriv beskrivning här.
+    Skriv beskrivning här. hej
     """
     if x % 2 == 1:
         return True
