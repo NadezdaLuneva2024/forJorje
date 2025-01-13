@@ -1,8 +1,19 @@
 # Uppgift 3
 # Hitta det största talet i en lista
 
-def funktions_namn(variabel_namn: datatyp) -> returtyp:
+def max_in_list(numbers: list[int]) -> int:
     """
     Skriv beskrivning här.
     """
-    pass # Ta bort denna rad och skriv din kod här
+    maximum = max(numbers)
+    return maximum
+
+def max_in_list(numbers: list[int]) -> int:
+    """
+    Skriv beskrivning här.
+    """
+    maximum = numbers[0]
+    for numb in numbers:
+        if numb>maximum:
+            maximum=numb
+    return maximum
