@@ -13,7 +13,7 @@ Samma data, men med en extra kolumn för "Category".
 #         row.append("Category")
 #         print(row)
 
-with open("products.csv", "r") as file:
+with open("C:\\Users\\Jahan\\OneDrive - SUAVIS AB\\Skrivbordet\\Nadia\\DataMenegment\\data science\\vscode101\\DS6\products.csv", "r") as file:
     reader = csv.reader(file)
     data = list(reader)
 
