@@ -1,43 +1,5 @@
 
-"""
-
-import csv
 import pandas as pd
-
-# with open("C:\\Users\\Jahan\\OneDrive - SUAVIS AB\\Skrivbordet\\Nadia\\DataMenegment\\data science\\vscode101\\inlamnings2\\befolkningsfoeraendringar-helar.csv", "r") as file:
-#     reader = csv.reader(file)
-#     for row in reader:
-#         print(row)
-#     data = list(reader)
-with open("C:\\Users\\Jahan\\OneDrive - SUAVIS AB\\Skrivbordet\\Nadia\\DataMenegment\\data science\\vscode101\\inlamnings2\\befolkningsfoeraendringar-helar.csv", "r") as file:
-    reader = csv.reader(file)
-    data = list(reader)
-    for i in range(len(data)):
-        print(data[i])
-    
-data[0].append("New_colomn")
-
-# for i in range(1, len(data)):
-#     data[i].append("noll_hantering")
-
-for i in range(len(data)):
-    print(data[i])
-
-with open("new-file.csv", "w") as new_file:
-    writer = csv.writer(new_file)
-    writer.writerows(data)
-
-# eller
-
-with open("C:\\Users\\Jahan\\OneDrive - SUAVIS AB\\Skrivbordet\\Nadia\\DataMenegment\\data science\\vscode101\\inlamnings2\\befolkningsfoeraendringar-helar.csv", "r") as file:
-    reader = csv.reader(file)
-    df = pd.DataFrame(data)
-    print (df)
-   
-"""
-import pandas as pd
-# Kontrollera antalet maximalt returnerade rader:
-#pd.options.display.max_rows = 1000
  
 # Extract: Hämta och importera csv_fil och läsa in data:
 
@@ -128,7 +90,6 @@ kommunsSkatPerAr["Skatt2025"] = genomsnittSkatt2025["mean"]
 
 #visualisering i linjediagram
 
-import matplotlib.pyplot as plt
 # Kommun     Skatt2023  Skatt2024  Skatt2025
 # -----------------------------------------
 # Stockholm    32.5       32.7       33.0
