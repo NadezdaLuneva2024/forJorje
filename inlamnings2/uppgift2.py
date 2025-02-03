@@ -61,6 +61,16 @@ genomsnittSkatt2025 = Skattesatser2025.groupby("Kommun") ["Summa, inkl. kyrkoavg
 
 import matplotlib.pyplot as plt
 
+# Scatter plot för att visa relationer mellan två variabler.
+data_scatter = data_with_new_colomn.groupby(['Kommun'])[['Summa, inkl. kyrkoavgift','Kyrkoavgift']].agg(['mean'])
+data_scatter.columns = ['Summa_mean', 'Kyrkoavgift_mean']
+data_scatter.plot(kind='scatter', x='Kyrkoavgift_mean', y='Summa_mean')
+plt.xlabel('Kyrkoavgift_mean')
+plt.ylabel('Summa_mean')
+plt.title('Summa_mean vs. Kyrkoavgift_mean')
+plt.tight_layout()
+plt.show()
+
 # Skapa ett stapeldiagram
 plt.bar(genomsnittSkatt["Kommun"], genomsnittSkatt["mean"])
 
@@ -77,6 +87,9 @@ plt.title("Fördelning av skattsats per komunn")
 plt.xlabel("Skattsats %")
 plt.ylabel("Antal kommuner")
 plt.show()
+
+
+
 
 
 #Samla ihop 3 tabeller
