@@ -3,7 +3,7 @@ from sklearn.linear_model import LinearRegression
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_excel("C:\\Users\\Jahan\\OneDrive - SUAVIS AB\\Skrivbordet\\Nadia\\DataMenegment\\data science\\vscode101\\uppgipt2_exampel4.xlsx", 
+df = pd.read_excel("C:\\Users\\Jahan\\OneDrive - SUAVIS AB\\Skrivbordet\\Nadia\\DataMenegment\\data science\\vscode101\\inlamnings2\\uppgipt2_exampel4.xlsx", 
                    header=0, 
                    decimal=".")
 
